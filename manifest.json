@@ -1,0 +1,28 @@
+{
+  "name": "Wikiception",
+  "version": "1.1",
+  "manifest_version": 2,
+  "description": "Vikipedi'ye erişmenin en hızlı yolu!",
+  "content_security_policy": "script-src 'self' https://www.google.com; object-src 'self'",
+  "permissions": [ "webRequest", "webRequestBlocking", "<all_urls>", "tabs" ],
+  "background": {
+    "scripts": [ "background.js" ]
+  },
+  "browser_action": {
+    "default_icon": {
+      "16": "icon16.png",
+      "24": "icon24.png",
+      "32": "icon32.png",
+      "64": "icon64.png",
+      "128": "icon128.png"
+    },
+    "default_popup": "extension.html"
+  },
+  "icons": {
+    "16": "icon16.png",
+    "24": "icon24.png",
+    "32": "icon32.png",
+    "64": "icon64.png",
+    "128": "icon128.png"
+  }
+}
